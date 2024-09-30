@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Fan Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #ff9999;
+        }
+        td {
+            background-color: #fff2f2;
+        }
+        ul {
+            list-style-type: circle;
+            color: purple;
+        }
+        ol {
+            list-style-type: decimal;
+            color: navy;
+        }
+        iframe {
+            border: none;
+        }
+        .emoji {
+            font-size: 2em;
+        }
+        button {
+            background-color: #ff9999;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the BTS Fan Website! 🎤💜</h1>
+
+    <h2>Meet BTS Members</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Birthday</th>
+        </tr>
+        <tr>
+            <td>RM</td>
+            <td>Leader, Rapper</td>
+            <td>September 12, 1994</td>
+        </tr>
+        <tr>
+            <td>Jin</td>
+            <td>Vocalist</td>
+            <td>December 4, 1992</td>
+        </tr>
+        <tr>
+            <td>Suga</td>
+            <td>Rapper</td>
+            <td>March 9, 1993</td>
+        </tr>
+        <tr>
+            <td>J-Hope</td>
+            <td>Rapper, Dancer</td>
+            <td>February 18, 1994</td>
+        </tr>
+        <tr>
+            <td>Jimin</td>
+            <td>Vocalist, Dancer</td>
+            <td>October 13, 1995</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>Vocalist, Dancer</td>
+            <td>December 30, 1995</td>
+        </tr>
+        <tr>
+            <td>Jungkook</td>
+            <td>Vocalist, Dancer</td>
+            <td>September 1, 1997</td>
+        </tr>
+    </table>
+
+    <h2>BTS Albums and Songs</h2>
+    <h3>Popular Albums</h3>
+    <ul>
+        <li>Map of the Soul: 7</li>
+        <li>Love Yourself: Tear</li>
+        <li>BE</li>
+        <li>Wings</li>
+    </ul>
+
+    <h3>Top Songs</h3>
+    <ol>
+        <li>Dynamite</li>
+        <li>Butter</li>
+        <li>Blood Sweat n Tears</li>
+        <li>Spring Day</li>
+    </ol>
+
+    <h2>Watch BTS Music Video</h2>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/0lapF4DQPKQ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+
+    <h2>Get a Special BTS Message</h2>
+    <button type="button" onclick="btsMessage()">Click for a Message from BTS!</button>
+    <p id="demo"></p>
+
+    <script>
+        function btsMessage() {
+            alert("BTS says: 'We love our ARMY! 💜'");
+            document.getElementById('demo').innerHTML = "BTS message delivered!";
+        }
+    </script>
+
+    <h2>Show Your BTS Love</h2>
+    <p class="emoji">💜 💫 🎶 🎤</p>
+</body>
+</html>
