@@ -1,53 +1,73 @@
-@charset "utf-8";
-form {
-	background-color: #f0e6ff;
-	padding: 20px;
-	border: 2px solid #b19cd9;
-	width: 300px;
-	border-radius: 8px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Fan Website</title>
+    <link rel="stylesheet" href="file:///C|/Users/user/Documents/GitHub/BtsWebsite2/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to the BTS Fan Zone!</h1>
+    <p>Show your love for the biggest K-pop group in the world! Join our community of ARMYs!</p>
+    
+    <h2>Tell us about your BTS fandom</h2>
+    <form>
+        <label for="name">What's your ARMY name?</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-input[type="text"], input[type="radio"], input[type="checkbox"] {
-    margin-bottom: 10px;
-}
+        <p>Who is your BTS bias?</p>
+        <input type="radio" id="rm" name="bias" value="RM">
+        <label for="rm">RM</label><br>
+        <input type="radio" id="jin" name="bias" value="Jin">
+        <label for="jin">Jin</label><br>
+        <input type="radio" id="j-hope" name="bias" value="J-hope">
+        <label for="j-hope">J-Hope</label><br>
+        <input type="radio" id="v" name="bias" value="V">
+        <label for="v">V</label><br>
+        <input type="radio" id="jk" name="bias" value="JK">
+        <label for="jk">JK</label><br>
+        <input type="radio" id="jimin" name="bias" value="Jimin">
+        <label for="jimin">Jimin</label><br>
+        <input type="radio" id="suga" name="bias" value="Suga">
+        <label for="suga">Suga</label><br>
 
-input[type="submit"] {
-	background-color: #6a0dad;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
-	border-radius: 4px;
-}
-input[type="submit"]:hover {
-	background-color: #9370DB;
-}
-nav{
-	background-color: #333;
-	padding: 10px;
-}
-nav ul{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-}
- 
-nav ul li {
-	margin-right: 20px;
-}
-nav ul li a {
-	color: white;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 4px;
-}
-nav ul li a:hover {
-	background-color: #9370DB;
-}
-audio {
-	margin-top: 20px;
-}
-canvas{
-	margin-top: 20px;
-}
+        <p>What kind of BTS merch do you like?</p>
+        <input type="checkbox" id="albums" name="merch" value="Albums">
+        <label for="albums">Albums</label><br>
+        <input type="checkbox" id="Lightsticks" name="merch" value="Lightsticks">
+        <label for="Lightsticks">Lightsticks</label><br>
+        <input type="checkbox" id="posters" name="merch" value="Posters">
+        <label for="Posters">Posters</label><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Listen to your favorite BTS track</h2>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/709801144&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+</iframe>
+    
+    <h2>Check out our BTS LOGO Art</h2>
+    <canvas id="mycanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+    
+    <script>
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#D8BFD8";
+        ctx.fillRect(20, 20, 150, 75);
+        
+        ctx.font = "20px Arial";
+        ctx.fillStyle = "white";
+        ctx.fillText("BTS ARMY", 35, 60);
+    </script>
+</body>
+</html>
+
