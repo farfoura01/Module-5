@@ -3,141 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS Fan Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        th {
-            background-color: #ff9999;
-        }
-        td {
-            background-color: #fff2f2;
-        }
-        ul {
-            list-style-type: circle;
-            color: purple;
-        }
-        ol {
-            list-style-type: decimal;
-            color: navy;
-        }
-        iframe {
-            border: none;
-        }
-        .emoji {
-            font-size: 2em;
-        }
-        button {
-            background-color: #ff9999;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #ff4d4d;
-        }
-    </style>
+    <title>BT Fan Website</title>
+    <link rel="stylesheet" href="file:///C|/Users/user/Documents/GitHub/BtsWebsite2/main.css">
 </head>
 <body>
-    <h1>Welcome to the BTS Fan Website! 🎤💜</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to the BTS Fan Zone!</h1>
+    <p>Show your love for the biggest K-pop group in the world! Join our community of ARMYs!</p>
 
-    <h2>Meet BTS Members</h2>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Birthday</th>
-        </tr>
-        <tr>
-            <td>RM</td>
-            <td>Leader, Rapper</td>
-            <td>September 12, 1994</td>
-        </tr>
-        <tr>
-            <td>Jin</td>
-            <td>Vocalist</td>
-            <td>December 4, 1992</td>
-        </tr>
-        <tr>
-            <td>Suga</td>
-            <td>Rapper</td>
-            <td>March 9, 1993</td>
-        </tr>
-        <tr>
-            <td>J-Hope</td>
-            <td>Rapper, Dancer</td>
-            <td>February 18, 1994</td>
-        </tr>
-        <tr>
-            <td>Jimin</td>
-            <td>Vocalist, Dancer</td>
-            <td>October 13, 1995</td>
-        </tr>
-        <tr>
-            <td>V</td>
-            <td>Vocalist, Dancer</td>
-            <td>December 30, 1995</td>
-        </tr>
-        <tr>
-            <td>Jungkook</td>
-            <td>Vocalist, Dancer</td>
-            <td>September 1, 1997</td>
-        </tr>
-    </table>
-
-    <h2>BTS Albums and Songs</h2>
-    <h3>Popular Albums</h3>
-    <ul>
-        <li>Map of the Soul: 7</li>
-        <li>Love Yourself: Tear</li>
-        <li>BE</li>
-        <li>Wings</li>
-    </ul>
-
-    <h3>Top Songs</h3>
-    <ol>
-        <li>Dynamite</li>
-        <li>Butter</li>
-        <li>Blood Sweat n Tears</li>
-        <li>Spring Day</li>
-    </ol>
-
-    <h2>Watch BTS Music Video</h2>
-    <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/0lapF4DQPKQ" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+    <h2>Tell us about your BTS fandom</h2>
+    <form>
+        <label for="name">What's your ARMY name?</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <p>Who is your BTS bias?</p>
+        <input type="radio" id="rm" name="bias" value="RM">
+        <label for="rm">RM</label><br>
+        <input type="radio" id="jin" name="bias" value="Jin">
+        <label for="jin">Jin</label><br>
+        <input type="radio" id="j-hope" name="bias" value="J-Hope">
+        <label for="j-hope">J-Hope</label><br>
+        <input type="radio" id="v" name="bias" value="V">
+        <label for="v">V</label><br>
+        <input type="radio" id="jk" name="bias" value="JK">
+        <label for="jk">JK</label><br>
+        <input type="radio" id="jimin" name="bias" value="Jimin">
+        <label for="jimin">Jimin</label><br>
+        <input type="radio" id="suga" name="bias" value="Suga">
+        <label for="suga">Suga</label><br>
+        
+        <p>What Kind of BTS merch do you like?</p>
+        <input type="checkbox" id="albums" name="merch" value="Albums">
+        <label for="albums">Albums</label><br>
+        <input type="checkbox" id="lightsticks" name="merch" value="Lightsticks">
+        <label for="lightsticks">Lightsticks</label><br>
+        <input type="checkbox" id="posters" name="merch" value="Posters">
+        <label for="posters">Posters</label><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h2>Listen to your favorite BTS track</h2>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/709801144&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
     </iframe>
-
-    <h2>Get a Special BTS Message</h2>
-    <button type="button" onclick="btsMessage()">Click for a Message from BTS!</button>
-    <p id="demo"></p>
-
+    <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
+        <a href="https://soundcloud.com/l2sharebts3" title="L2ShareBTS♫3" target="_blank" style="color: #cccccc; text-decoration: none;">L2ShareBTS♫3</a> · 
+        <a href="https://soundcloud.com/l2sharebts3/run" title="BTS - RUN" target="_blank" style="color: #cccccc; text-decoration: none;">BTS - RUN</a>
+    </div>
+    
+    <h2>Check out our BTS LOGO Art</h2>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+    
     <script>
-        function btsMessage() {
-            alert("BTS says: 'We love our ARMY! 💜'");
-            document.getElementById('demo').innerHTML = "BTS message delivered!";
-        }
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#D8BFD8";
+        ctx.fillRect(20, 20, 150, 75);
+        
+        ctx.font = "20px Arial";
+        ctx.fillStyle = "white";
+        ctx.fillText("BTS ARMY", 35, 60);
     </script>
-
-    <h2>Show Your BTS Love</h2>
-    <p class="emoji">💜 💫 🎶 🎤</p>
 </body>
 </html>
