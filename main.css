@@ -1,0 +1,53 @@
+@charset "utf-8";
+form {
+	background-color: #f0e6ff;
+	padding: 20px;
+	border: 2px solid #b19cd9;
+	width: 300px;
+	border-radius: 8px;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	background-color: #6a0dad;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+input[type="sumbit"]:hover {
+	background-color: #9370DB;
+}
+nav{
+	background-color: #333;
+	padding: 10px;
+}
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+ 
+nav ul li {
+	margin-right: 20px;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+}
+nav ul li a:hover {
+	background-color: #9370DB;
+}
+audio {
+	margin-top: 20px;
+}
+canvas{
+	margin-top: 20px;
+} 
